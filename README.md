@@ -149,3 +149,33 @@ ____
 - Help
 - Report a Problem
 
+
+
+___
+
+
+
+### Programming Plan
+
+rails generate scaffold Document :name: string, :has_many: @paragraphs
+
+class DocumentController
+
+​	def add_reference(document)
+
+​	end
+
+end
+
+
+
+rails generate scapel Paragraph :text: string, :has_one :parent, :has_many :descendants
+
+- @paragraph.parent = #previous@paragraph.parent
+- if ident @paragraph.parent = #previous@paragraph
+- if outdent @paragraph.parent = previou@paragraph.parent.parent
+
+save button or action cable save
+
+
+
